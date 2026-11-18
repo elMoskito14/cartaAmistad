@@ -57,9 +57,20 @@ export function supabaseConfigurado(): boolean {
   return Boolean(process.env.NEXT_PUBLIC_SUPABASE_URL && process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY);
 }
 
+/**
+ * URL base del proyecto. Supabase enseña también la URL de la Data API (…supabase.co/rest/v1):
+ * si se pega esa, el cliente pediría …/rest/v1/auth/v1/otp y Supabase respondería 401.
+ */
+function urlBase(url: string): string {
+  return url.trim().replace(/\/+$/, "").replace(/\/rest\/v1$/, "");
+}
+
 export function clienteSupabase(): SupabaseClient {
   if (!cliente) {
-    cliente = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!);
+    cliente = createClient(
+      urlBase(process.env.NEXT_PUBLIC_SUPABASE_URL!),
+      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!.trim(),
+    );
   }
   return cliente;
 }
