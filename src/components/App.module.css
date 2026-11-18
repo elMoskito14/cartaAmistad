@@ -181,6 +181,10 @@
   display: none;
 }
 
+.barra {
+  display: block;
+}
+
 .pie {
   position: fixed;
   left: 0;
@@ -228,31 +232,40 @@
 }
 
 @media (min-width: 1024px) {
-  .pestanas {
-    max-width: 420px;
-  }
   .marca {
     font-size: 30px;
   }
-  .contenido[data-con-aside="true"] {
-    grid-template-columns: minmax(0, 1.6fr) minmax(320px, 1fr);
-    column-gap: 64px;
-    align-items: start;
+  /* En escritorio la marca va en una línea: más alto para la mesa. */
+  .marca br {
+    display: none;
   }
-  .aside {
-    display: block;
-    padding: 0 0 0 8px;
+  /* Escritorio: pestañas y botón en una sola fila, la mesa a pantalla completa y el ranking debajo. */
+  .barra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 4px;
   }
-  /* En escritorio el botón pasa a la cabeza de la columna del ranking: la mesa entera queda a la vista. */
+  .pestanas {
+    flex: 0 1 420px;
+    padding-bottom: 0;
+  }
   .pie {
     display: none;
   }
   .pieAside {
     display: block;
-    margin-bottom: 28px;
   }
   .pieAside .cta {
-    max-width: none;
+    width: 300px;
+    min-height: 52px;
+  }
+  .aside {
+    display: block;
+    margin-top: 24px;
+    padding-top: 40px;
+    border-top: 1px solid var(--fieltro-linea);
   }
   .soloMovil {
     display: none;

@@ -188,7 +188,7 @@
 @media (min-width: 1024px) {
   .mesa {
     /* Ocho filas a la vista en un portátil: el ancho sale también del alto de la pantalla. */
-    width: clamp(520px, min(52vw, calc((100vh - 300px - var(--n) * 8px) * 0.6667 + 148px + var(--n) * 9px)), 760px);
+    width: clamp(520px, min(100%, calc((100vh - 268px - var(--n) * 8px) * 0.6667 + 148px + var(--n) * 9px)), 1180px);
     margin: 0 auto;
   }
   .tanteo {
@@ -256,6 +256,6 @@
 @media (min-width: 1024px) {
   /* Misma idea que la mesa normal, con el espaciado de la densa: todas las filas a la vista. */
   .mesa.densa {
-    width: clamp(420px, min(52vw, calc((100vh - 300px - var(--n) * 6px) * 0.6667 + 133px + var(--n) * 5px)), 760px);
+    width: clamp(420px, min(100%, calc((100vh - 268px - var(--n) * 6px) * 0.6667 + 133px + var(--n) * 5px)), 1180px);
   }
 }

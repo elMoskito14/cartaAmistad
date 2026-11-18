@@ -171,3 +171,12 @@
 .actual {
   color: var(--amarraco);
 }
+
+/* Escritorio: el ranking va debajo de la mesa, en tres columnas. */
+@media (min-width: 1024px) {
+  .ranking {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 48px;
+    align-items: start;
+  }
+}

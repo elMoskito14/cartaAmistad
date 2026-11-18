@@ -241,8 +241,7 @@ export function App() {
     <div className={s.app}>
       <header className={s.cabecera}>
         <h1 className={s.marca}>
-          La Carta
-          <br />
+          La Carta <br />
           de la Amistad
         </h1>
         <div className={s.herramientas}>
@@ -294,40 +293,43 @@ export function App() {
         </div>
       )}
 
-      <nav className={s.pestanas} role="tablist" aria-label="Secciones">
-        <button
-          type="button"
-          role="tab"
-          aria-selected={pestana === "mesa"}
-          className={s.pestana}
-          onClick={() => setPestana("mesa")}
-        >
-          Mesa
-        </button>
-        <button
-          type="button"
-          role="tab"
-          aria-selected={pestana === "ranking"}
-          className={`${s.pestana} ${s.soloMovil}`}
-          onClick={() => setPestana("ranking")}
-        >
-          Ranking
-        </button>
-        <button
-          type="button"
-          role="tab"
-          aria-selected={pestana === "bandeja"}
-          className={s.pestana}
-          onClick={() => setPestana("bandeja")}
-        >
-          Bandeja
-          {pendientesMias > 0 && (
-            <span className={`${s.contador} tabular`} aria-label={`${pendientesMias} sin responder`}>
-              {pendientesMias}
-            </span>
-          )}
-        </button>
-      </nav>
+      <div className={s.barra}>
+        <nav className={s.pestanas} role="tablist" aria-label="Secciones">
+          <button
+            type="button"
+            role="tab"
+            aria-selected={pestana === "mesa"}
+            className={s.pestana}
+            onClick={() => setPestana("mesa")}
+          >
+            Mesa
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={pestana === "ranking"}
+            className={`${s.pestana} ${s.soloMovil}`}
+            onClick={() => setPestana("ranking")}
+          >
+            Ranking
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={pestana === "bandeja"}
+            className={s.pestana}
+            onClick={() => setPestana("bandeja")}
+          >
+            Bandeja
+            {pendientesMias > 0 && (
+              <span className={`${s.contador} tabular`} aria-label={`${pendientesMias} sin responder`}>
+                {pendientesMias}
+              </span>
+            )}
+          </button>
+        </nav>
+        {puedeEchar && <div className={s.pieAside}>{botonEchar}</div>}
+      </div>
 
       {errorCarga && (
         <p className={ui.error} role="alert">
@@ -393,7 +395,6 @@ export function App() {
           </main>
           {conAside && (
             <aside className={s.aside} aria-label="Ranking">
-              {puedeEchar && <div className={s.pieAside}>{botonEchar}</div>}
               <Ranking personas={personas} cartas={cartas} anio={anio} anios={anios} />
             </aside>
           )}
