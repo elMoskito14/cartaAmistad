@@ -1,0 +1,124 @@
+.boton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 12px 22px;
+  border-radius: 12px;
+  background: var(--boton);
+  color: var(--tinta);
+  font-family: var(--fuente-titulo);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.1;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.28), 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition:
+    background-color 0.2s var(--ease-salida),
+    transform 0.2s var(--ease-salida),
+    box-shadow 0.2s var(--ease-salida);
+}
+
+.boton:hover:not(:disabled) {
+  background: var(--boton-hover);
+}
+
+.boton:active:not(:disabled) {
+  transform: translateY(1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.boton:disabled {
+  background: #cfc6b0;
+  color: #5a5546;
+  box-shadow: none;
+}
+
+.secundario {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 10px 18px;
+  border-radius: 12px;
+  border: 1.5px solid currentColor;
+  font-weight: 600;
+  font-size: 15px;
+  transition: background-color 0.2s var(--ease-salida);
+}
+
+.secundario:hover:not(:disabled) {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.secundario:disabled {
+  opacity: 0.5;
+}
+
+.ancho {
+  width: 100%;
+}
+
+.campo {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.etiqueta {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--tinta);
+}
+
+.ayuda {
+  font-size: 13px;
+  color: var(--tinta-suave);
+}
+
+.entrada {
+  width: 100%;
+  min-height: 46px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1.5px solid #cfc8b8;
+  background: #fbfaf7;
+  color: var(--tinta);
+  caret-color: var(--copas);
+  transition: border-color 0.2s;
+}
+
+.entrada:focus {
+  outline: none;
+  border-color: var(--tapete);
+  box-shadow: 0 0 0 3px rgba(29, 90, 58, 0.2);
+}
+
+.entrada::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  filter: invert(27%) sepia(36%) saturate(700%) hue-rotate(95deg) brightness(80%);
+}
+
+.entrada::-webkit-datetime-edit {
+  color: var(--tinta);
+}
+
+.entrada::placeholder {
+  color: #6f6a60;
+}
+
+textarea.entrada {
+  min-height: 96px;
+  field-sizing: content;
+  resize: none;
+  line-height: 1.4;
+}
+
+.error {
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #fbe7e7;
+  color: #7d1419;
+  font-size: 14px;
+  margin-bottom: 14px;
+}

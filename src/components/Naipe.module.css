@@ -1,0 +1,159 @@
+.naipe {
+  display: block;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  border-radius: var(--radio-naipe);
+  transform-style: preserve-3d;
+}
+
+.cara,
+.dorso {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radio-naipe);
+  backface-visibility: hidden;
+  box-shadow: var(--sombra-naipe);
+}
+
+.dorso {
+  background-color: var(--dorso);
+  overflow: hidden;
+  background-image:
+    repeating-linear-gradient(45deg, var(--dorso-trama) 0 2px, transparent 2px 5px),
+    repeating-linear-gradient(-45deg, var(--dorso-trama) 0 2px, transparent 2px 5px);
+  border: 2px solid var(--naipe);
+}
+
+/* Dorso: marco y medallón central, como el reverso de una baraja española. */
+.dorso::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.dorso::after {
+  content: "";
+  position: absolute;
+  inset: 30% 24%;
+  border-radius: 50%;
+  background: var(--dorso);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.cara {
+  background: var(--naipe);
+  border: 1px solid var(--naipe-borde);
+  display: grid;
+  place-items: center;
+  color: var(--tinta);
+}
+
+/* Filete interior de los naipes españoles: se corta en los palos. */
+.cara::before {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  border-radius: 2px;
+  border: 1px solid currentColor;
+  opacity: 0.18;
+}
+
+.cara > svg {
+  width: 56%;
+  height: auto;
+}
+
+.numero {
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  font-family: var(--fuente-titulo);
+  font-weight: 800;
+  font-size: 9px;
+  line-height: 1;
+  color: var(--tinta-suave);
+}
+
+/* Cumplida: el filete se marca en el color del palo y se corta (las pintas). */
+.cumplida .cara::before {
+  inset: 2px;
+  border: 1.5px solid var(--color-palo);
+  opacity: 1;
+}
+
+/* El número abre su propio hueco en el filete. */
+.cumplida .numero {
+  top: 3px;
+  left: 3px;
+  padding: 0 1px 1px 0;
+  background: var(--naipe);
+  z-index: 1;
+}
+
+.cumplida .cara::after {
+  content: "";
+  position: absolute;
+  left: 36%;
+  right: 36%;
+  top: 1px;
+  bottom: 1px;
+  background:
+    linear-gradient(var(--naipe), var(--naipe)) top / 100% 3px no-repeat,
+    linear-gradient(var(--naipe), var(--naipe)) bottom / 100% 3px no-repeat;
+}
+
+.boca-abajo .cara {
+  transform: rotateY(180deg);
+}
+
+.boca-arriba .dorso {
+  transform: rotateY(180deg);
+}
+
+.propia {
+  display: block;
+  border: 1.5px dashed var(--fieltro-linea);
+  border-radius: var(--radio-naipe);
+  aspect-ratio: 2 / 3;
+  width: 100%;
+}
+
+/* Amarraco: la ficha encima del naipe mientras el favor espera respuesta. */
+.amarraco {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 46%;
+  aspect-ratio: 1.35;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at 35% 30%, #fbe39b 0%, var(--amarraco) 45%, var(--amarraco-sombra) 100%);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
+  transform: translateZ(1px);
+}
+
+.nuevo {
+  outline: 2px solid var(--resalte);
+  outline-offset: 2px;
+  animation: aviso 1.6s var(--ease-salida) 2;
+}
+
+@keyframes aviso {
+  0% {
+    outline-offset: 7px;
+    outline-color: transparent;
+  }
+  100% {
+    outline-offset: 2px;
+    outline-color: var(--resalte);
+  }
+}
+
+.grande .numero {
+  top: 8px;
+  left: 10px;
+  font-size: 18px;
+}

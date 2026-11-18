@@ -1,0 +1,797 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-18T13:42:29.396Z",
+  "title": "Design System: La Carta de la Amistad",
+  "extensions": {
+    "colorMeta": {
+      "tapete": {
+        "role": "neutral",
+        "displayName": "Fieltro",
+        "canonical": "#1d5a3a",
+        "tonalRamp": [
+          "#193426",
+          "#26593f",
+          "#33855a",
+          "#3db877",
+          "#69c997",
+          "#9ad5b6",
+          "#c8e5d5",
+          "#eef6f2"
+        ]
+      },
+      "tapete-claro": {
+        "role": "neutral",
+        "displayName": "Fieltro Iluminado",
+        "canonical": "#23704a",
+        "tonalRamp": [
+          "#193426",
+          "#265a40",
+          "#32865c",
+          "#3bb97b",
+          "#68ca9a",
+          "#9ad6b8",
+          "#c7e5d6",
+          "#eef6f2"
+        ]
+      },
+      "tapete-oscuro": {
+        "role": "neutral",
+        "displayName": "Fieltro Hondo",
+        "canonical": "#123b26",
+        "tonalRamp": [
+          "#183426",
+          "#255a3f",
+          "#31875b",
+          "#3aba79",
+          "#68ca98",
+          "#99d6b7",
+          "#c7e5d6",
+          "#eef6f2"
+        ]
+      },
+      "fieltro-linea": {
+        "role": "neutral",
+        "displayName": "Costura de Fieltro",
+        "canonical": "rgba(255, 255, 255, 0.14)",
+        "tonalRamp": [
+          "#262626",
+          "#404040",
+          "#5c5c5c",
+          "#7a7a7a",
+          "#999999",
+          "#b8b8b8",
+          "#d6d6d6",
+          "#f2f2f2"
+        ]
+      },
+      "sobre-tapete": {
+        "role": "neutral",
+        "displayName": "Tiza",
+        "canonical": "#f3f7f2",
+        "tonalRamp": [
+          "#232c20",
+          "#394c34",
+          "#506f49",
+          "#69975e",
+          "#8caf83",
+          "#afc5aa",
+          "#d2ddcf",
+          "#f1f4f0"
+        ]
+      },
+      "sobre-tapete-suave": {
+        "role": "neutral",
+        "displayName": "Tiza Gastada",
+        "canonical": "#b9d3c2",
+        "tonalRamp": [
+          "#202c24",
+          "#344b3c",
+          "#4a6e56",
+          "#5f9672",
+          "#84ae92",
+          "#abc5b4",
+          "#d0ddd4",
+          "#f1f4f2"
+        ]
+      },
+      "naipe": {
+        "role": "neutral",
+        "displayName": "Naipe",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#262626",
+          "#404040",
+          "#5c5c5c",
+          "#7a7a7a",
+          "#999999",
+          "#b8b8b8",
+          "#d6d6d6",
+          "#f2f2f2"
+        ]
+      },
+      "naipe-borde": {
+        "role": "neutral",
+        "displayName": "Canto de Naipe",
+        "canonical": "#e6e1d6",
+        "tonalRamp": [
+          "#2d2920",
+          "#4c4434",
+          "#6f6348",
+          "#98855d",
+          "#b0a182",
+          "#c5bdaa",
+          "#ddd9cf",
+          "#f4f3f0"
+        ]
+      },
+      "tinta": {
+        "role": "neutral",
+        "displayName": "Tinta",
+        "canonical": "#1b1b1b",
+        "tonalRamp": [
+          "#262626",
+          "#404040",
+          "#5c5c5c",
+          "#7a7a7a",
+          "#999999",
+          "#b8b8b8",
+          "#d6d6d6",
+          "#f2f2f2"
+        ]
+      },
+      "tinta-suave": {
+        "role": "neutral",
+        "displayName": "Tinta Suave",
+        "canonical": "#4d4a45",
+        "tonalRamp": [
+          "#282725",
+          "#42403d",
+          "#605d57",
+          "#817c74",
+          "#9e9a94",
+          "#bbb8b4",
+          "#d8d7d5",
+          "#f3f2f2"
+        ]
+      },
+      "oros": {
+        "role": "tertiary",
+        "displayName": "Oros",
+        "canonical": "#d9a21b",
+        "tonalRamp": [
+          "#3b2f12",
+          "#665019",
+          "#9a761d",
+          "#d8a21d",
+          "#e1b751",
+          "#e4ca8b",
+          "#ecdfc0",
+          "#f8f5ec"
+        ]
+      },
+      "oros-oscuro": {
+        "role": "tertiary",
+        "displayName": "Oros Oscuro",
+        "canonical": "#8f6609",
+        "tonalRamp": [
+          "#3d2f0f",
+          "#6b5114",
+          "#a37715",
+          "#e4a410",
+          "#ebb947",
+          "#eacb85",
+          "#efe0bd",
+          "#f9f5ec"
+        ]
+      },
+      "copas": {
+        "role": "tertiary",
+        "displayName": "Copas",
+        "canonical": "#c0282d",
+        "tonalRamp": [
+          "#371516",
+          "#601f22",
+          "#90272b",
+          "#c92c31",
+          "#d65c60",
+          "#dd9295",
+          "#e9c4c5",
+          "#f7edee"
+        ]
+      },
+      "copas-oscuro": {
+        "role": "tertiary",
+        "displayName": "Copas Oscuro",
+        "canonical": "#8e1b20",
+        "tonalRamp": [
+          "#381416",
+          "#611e21",
+          "#92252a",
+          "#cc2930",
+          "#d85a5f",
+          "#df9194",
+          "#e9c3c5",
+          "#f7edee"
+        ]
+      },
+      "espadas": {
+        "role": "tertiary",
+        "displayName": "Espadas",
+        "canonical": "#2a5aa8",
+        "tonalRamp": [
+          "#172336",
+          "#22395d",
+          "#2c508c",
+          "#3269c3",
+          "#618cd1",
+          "#95afda",
+          "#c5d2e7",
+          "#eef1f7"
+        ]
+      },
+      "espadas-oscuro": {
+        "role": "tertiary",
+        "displayName": "Espadas Oscuro",
+        "canonical": "#1b3d75",
+        "tonalRamp": [
+          "#162237",
+          "#21385f",
+          "#2a508e",
+          "#2f68c6",
+          "#5f8bd3",
+          "#94afdb",
+          "#c5d2e8",
+          "#eef1f7"
+        ]
+      },
+      "bastos": {
+        "role": "tertiary",
+        "displayName": "Bastos",
+        "canonical": "#8a5a2b",
+        "tonalRamp": [
+          "#342618",
+          "#5a3f26",
+          "#865b32",
+          "#b97a3b",
+          "#ca9868",
+          "#d6b79a",
+          "#e5d6c7",
+          "#f6f2ee"
+        ]
+      },
+      "bastos-oscuro": {
+        "role": "tertiary",
+        "displayName": "Bastos Oscuro",
+        "canonical": "#5e3c1a",
+        "tonalRamp": [
+          "#352617",
+          "#5c4024",
+          "#895c2e",
+          "#bf7a36",
+          "#ce9964",
+          "#d8b897",
+          "#e6d6c6",
+          "#f7f2ee"
+        ]
+      },
+      "dorso": {
+        "role": "secondary",
+        "displayName": "Rojo de Dorso",
+        "canonical": "#b5232a",
+        "tonalRamp": [
+          "#381516",
+          "#611e22",
+          "#92262b",
+          "#cc2931",
+          "#d85a60",
+          "#de9195",
+          "#e9c3c5",
+          "#f7edee"
+        ]
+      },
+      "dorso-trama": {
+        "role": "secondary",
+        "displayName": "Trama de Dorso",
+        "canonical": "#951b21",
+        "tonalRamp": [
+          "#381416",
+          "#621e21",
+          "#93242a",
+          "#ce272f",
+          "#d9595f",
+          "#df9094",
+          "#eac3c5",
+          "#f8edee"
+        ]
+      },
+      "amarraco": {
+        "role": "primary",
+        "displayName": "Oro de Amarraco",
+        "canonical": "#e8b93b",
+        "tonalRamp": [
+          "#3b3012",
+          "#675219",
+          "#9b791c",
+          "#d9a61b",
+          "#e2ba50",
+          "#e5cc8a",
+          "#ede0c0",
+          "#f8f5ec"
+        ]
+      },
+      "amarraco-sombra": {
+        "role": "primary",
+        "displayName": "Sombra de Amarraco",
+        "canonical": "#9b7514",
+        "tonalRamp": [
+          "#3a2f12",
+          "#66501a",
+          "#9a771e",
+          "#d7a31e",
+          "#e1b851",
+          "#e4cb8b",
+          "#ece0c0",
+          "#f8f5ec"
+        ]
+      },
+      "boton": {
+        "role": "primary",
+        "displayName": "Oro de Amarraco (botón)",
+        "canonical": "#e8b93b",
+        "tonalRamp": [
+          "#3b3012",
+          "#675219",
+          "#9b791c",
+          "#d9a61b",
+          "#e2ba50",
+          "#e5cc8a",
+          "#ede0c0",
+          "#f8f5ec"
+        ]
+      },
+      "boton-hover": {
+        "role": "primary",
+        "displayName": "Oro Encendido",
+        "canonical": "#f2c856",
+        "tonalRamp": [
+          "#3d3110",
+          "#6a5315",
+          "#a17c17",
+          "#e1aa13",
+          "#e9be49",
+          "#e9ce87",
+          "#eee1be",
+          "#f9f5ec"
+        ]
+      },
+      "resalte": {
+        "role": "primary",
+        "displayName": "Oro de Foco",
+        "canonical": "#ffd75e",
+        "tonalRamp": [
+          "#40330c",
+          "#71590e",
+          "#ac840c",
+          "#f3b702",
+          "#f6c83c",
+          "#f1d47e",
+          "#f3e4ba",
+          "#faf6eb"
+        ]
+      },
+      "amarraco-brillo": {
+        "role": "neutral",
+        "displayName": "Brillo de Amarraco",
+        "canonical": "#fbe39b",
+        "purpose": "Luz del degradado radial de cada amarraco."
+      },
+      "banda-demo": {
+        "role": "neutral",
+        "displayName": "Sombra de Banda",
+        "canonical": "rgba(0, 0, 0, 0.22)",
+        "purpose": "Fondo de la banda del modo demo sobre el fieltro."
+      },
+      "velo-hoja": {
+        "role": "neutral",
+        "displayName": "Velo de Mesa",
+        "canonical": "rgba(8, 26, 16, 0.6)",
+        "purpose": "Velo detrás de las hojas abiertas."
+      },
+      "campo-fondo": {
+        "role": "neutral",
+        "displayName": "Papel de Campo",
+        "canonical": "#fbfaf7",
+        "purpose": "Fondo de campos de texto y fecha."
+      },
+      "campo-borde": {
+        "role": "neutral",
+        "displayName": "Canto de Campo",
+        "canonical": "#cfc8b8",
+        "purpose": "Borde de campos en reposo."
+      },
+      "campo-placeholder": {
+        "role": "neutral",
+        "displayName": "Lápiz",
+        "canonical": "#6f6a60",
+        "purpose": "Texto de ejemplo en campos."
+      },
+      "hoja-hover": {
+        "role": "neutral",
+        "displayName": "Papel Tocado",
+        "canonical": "#f5f2ea",
+        "purpose": "Hover de opciones dentro de la hoja."
+      },
+      "cerrar-hover": {
+        "role": "neutral",
+        "displayName": "Papel Pulsado",
+        "canonical": "#f1eee7",
+        "purpose": "Hover del botón cerrar de la hoja."
+      },
+      "seleccion-fondo": {
+        "role": "neutral",
+        "displayName": "Fieltro Lavado",
+        "canonical": "#e8f1ea",
+        "purpose": "Fondo de la persona elegida al echar carta."
+      },
+      "desactivado-fondo": {
+        "role": "neutral",
+        "displayName": "Oro Apagado",
+        "canonical": "#cfc6b0",
+        "purpose": "Botón principal desactivado."
+      },
+      "desactivado-texto": {
+        "role": "neutral",
+        "displayName": "Tinta Apagada",
+        "canonical": "#5a5546",
+        "purpose": "Texto del botón desactivado."
+      },
+      "error-fondo": {
+        "role": "neutral",
+        "displayName": "Copa Lavada",
+        "canonical": "#fbe7e7",
+        "purpose": "Fondo de mensajes de error."
+      },
+      "error-texto": {
+        "role": "neutral",
+        "displayName": "Copa Honda",
+        "canonical": "#7d1419",
+        "purpose": "Texto de mensajes de error."
+      },
+      "estado-fondo": {
+        "role": "neutral",
+        "displayName": "Gris Fieltro",
+        "canonical": "#eef2ee",
+        "purpose": "Etiqueta de estado aceptada en el detalle."
+      },
+      "pendiente-fondo": {
+        "role": "neutral",
+        "displayName": "Oro Lavado",
+        "canonical": "#fbf0d2",
+        "purpose": "Etiqueta de estado pendiente."
+      },
+      "pendiente-texto": {
+        "role": "neutral",
+        "displayName": "Oro Hondo",
+        "canonical": "#6b4d06",
+        "purpose": "Texto de la etiqueta pendiente."
+      },
+      "cumplida-fondo": {
+        "role": "neutral",
+        "displayName": "Fieltro Claro",
+        "canonical": "#dcefe2",
+        "purpose": "Etiqueta de estado cumplida."
+      },
+      "cumplida-texto": {
+        "role": "neutral",
+        "displayName": "Fieltro Profundo",
+        "canonical": "#124128",
+        "purpose": "Texto de la etiqueta cumplida."
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Marca",
+        "purpose": "«La Carta de la Amistad» en la cabecera; 30px desde 1024px."
+      },
+      "headline": {
+        "displayName": "Titular",
+        "purpose": "Títulos de sección y de hoja."
+      },
+      "numeral": {
+        "displayName": "Cifra de premio",
+        "purpose": "Valor de cada premio, en oro."
+      },
+      "title": {
+        "displayName": "Nombre de premio",
+        "purpose": "Nombre de premio y de tarjeta de la Bandeja (17px)."
+      },
+      "button": {
+        "displayName": "Botón",
+        "purpose": "Texto del botón principal."
+      },
+      "body": {
+        "displayName": "Texto",
+        "purpose": "Texto base."
+      },
+      "label": {
+        "displayName": "Etiqueta",
+        "purpose": "Pestañas, nombres de fila, etiquetas de campo."
+      },
+      "caption": {
+        "displayName": "Leyenda",
+        "purpose": "Leyendas, cabeceras de la matriz y ayudas (11–13px)."
+      },
+      "card-index": {
+        "displayName": "Índice de naipe",
+        "purpose": "Número de carta en la esquina del naipe (9/15/18px)."
+      },
+      "display-escritorio": {
+        "displayName": "Marca en escritorio",
+        "purpose": "La marca a 30px desde 1024px."
+      },
+      "grito": {
+        "displayName": "Grito",
+        "purpose": "«¡Órdago!» al caer el naipe (38px, trazo copas)."
+      },
+      "favor-grande": {
+        "displayName": "Favor en detalle",
+        "purpose": "El texto del favor en la hoja de detalle (19px)."
+      },
+      "favor": {
+        "displayName": "Favor",
+        "purpose": "El texto del favor en la Bandeja (17px)."
+      },
+      "cuerpo-pequeno": {
+        "displayName": "Cuerpo pequeño",
+        "purpose": "Subtítulos, metadatos y opciones (14px)."
+      },
+      "mesa-cabecera": {
+        "displayName": "Cabecera de mesa",
+        "purpose": "Abreviaturas de columna de la mesa (12px)."
+      },
+      "mesa-cabecera-densa": {
+        "displayName": "Cabecera de mesa densa",
+        "purpose": "Abreviaturas con más de 9 personas (10px)."
+      },
+      "nota": {
+        "displayName": "Nota",
+        "purpose": "Leyenda de estados, contadores y textos en vuelo (12px)."
+      },
+      "nota-mesa": {
+        "displayName": "Nota de mesa",
+        "purpose": "«Pide a quién» y «Echa» en la cabecera de la mesa (11px)."
+      }
+    },
+    "shadows": [
+      {
+        "name": "sombra-naipe",
+        "value": "0 1px 2px rgba(0, 0, 0, 0.35), 0 3px 8px rgba(0, 0, 0, 0.18)",
+        "purpose": "Todo naipe en reposo y tarjetas de la Bandeja."
+      },
+      {
+        "name": "sombra-levantada",
+        "value": "0 6px 14px rgba(0, 0, 0, 0.35), 0 2px 4px rgba(0, 0, 0, 0.25)",
+        "purpose": "Fila y columna enfocadas; aviso flotante."
+      },
+      {
+        "name": "sombra-boton",
+        "value": "0 4px 14px rgba(0, 0, 0, 0.28), 0 1px 3px rgba(0, 0, 0, 0.2)",
+        "purpose": "Botón principal en reposo."
+      },
+      {
+        "name": "sombra-hoja",
+        "value": "0 -10px 40px rgba(0, 0, 0, 0.35)",
+        "purpose": "Hoja que sube sobre el velo rgba(8, 26, 16, 0.6)."
+      },
+      {
+        "name": "sombra-vuelo",
+        "value": "0 14px 30px rgba(0, 0, 0, 0.4), 0 3px 6px rgba(0, 0, 0, 0.3)",
+        "purpose": "Solo el naipe en vuelo."
+      },
+      {
+        "name": "sombra-ficha",
+        "value": "0 2px 3px rgba(0, 0, 0, 0.45)",
+        "purpose": "Amarraco apoyado sobre el naipe."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-salida",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Curva única de todas las transiciones y del vuelo."
+      },
+      {
+        "name": "transicion-estado",
+        "value": "0.2s–0.25s ease-salida",
+        "purpose": "Hover, foco de fila/columna, atenuado."
+      },
+      {
+        "name": "vuelo-arco",
+        "value": "1.05s, keyframes en 0/0.22/0.62/1",
+        "purpose": "El naipe sale de la mano y cruza en arco a su casilla."
+      },
+      {
+        "name": "vuelo-golpe",
+        "value": "0.22s escala ×1.18 → 1; grito 0.32s de escala 1.7 y −14° a −6°",
+        "purpose": "Golpe en la mesa y «¡Órdago!»."
+      },
+      {
+        "name": "vuelo-volteo",
+        "value": "0.34s rotateY 0 → 180°, easeInOut",
+        "purpose": "El naipe queda boca abajo."
+      },
+      {
+        "name": "vuelo-amarraco",
+        "value": "0.28s desde −36px y escala 1.7",
+        "purpose": "Cae la ficha encima."
+      },
+      {
+        "name": "alMazo",
+        "value": "0.9s tras 0.2s; a (−60px, −26px) −24° escala 0.8, opacidad 0",
+        "purpose": "Rechazo: el naipe vuelve al mazo."
+      },
+      {
+        "name": "lluvia-cumplido",
+        "value": "1s, 12 amarracos en abanico que caen 90px",
+        "purpose": "Favor cumplido."
+      },
+      {
+        "name": "aviso-nuevo",
+        "value": "1.6s × 2, contorno resalte que se asienta",
+        "purpose": "Naipe cambiado en tiempo real hasta verlo."
+      },
+      {
+        "name": "hoja-subir",
+        "value": "0.42s desde 40px con fundido; velo 0.3s",
+        "purpose": "Apertura de la hoja."
+      },
+      {
+        "name": "reducido",
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "Sin vuelo ni lluvia; aviso de texto; Bandeja solo funde; CSS a 0.01ms."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "tablet",
+        "value": "720px"
+      },
+      {
+        "name": "escritorio",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Naipe: cuatro estados",
+      "kind": "custom",
+      "refersTo": "naipe-dorso",
+      "description": "La unidad de información: sin echar (dorso), pedida (dorso + amarraco), aceptada (pip hueco, filete tenue), cumplida (pip lleno, filete del palo cortado).",
+      "html": "<div class=\"ds-tapete\"><span class=\"ds-naipe ds-dorso\" tabindex=\"0\"></span><span class=\"ds-naipe ds-dorso\"><span class=\"ds-amarraco\"></span></span><span class=\"ds-naipe ds-cara\"><span class=\"ds-num\">7</span><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\"><path d=\"M6 3.5h12v2.8a6 6 0 0 1-4.6 5.84V16.5h3.1v3.8H7.5v-3.8h3.1v-4.36A6 6 0 0 1 6 6.3z\" fill=\"none\" stroke=\"#8e1b20\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/></svg></span><span class=\"ds-naipe ds-cara ds-cumplida\"><span class=\"ds-num\">14</span><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\"><path d=\"M6 3.5h12v2.8a6 6 0 0 1-4.6 5.84V16.5h3.1v3.8H7.5v-3.8h3.1v-4.36A6 6 0 0 1 6 6.3z\" fill=\"#c0282d\" stroke=\"#8e1b20\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/></svg></span></div>",
+      "css": ":host{--tapete:#1d5a3a;--tapete-claro:#23704a;--tapete-oscuro:#123b26;--sobre-tapete:#f3f7f2;--sobre-tapete-suave:#b9d3c2;--naipe:#fff;--naipe-borde:#e6e1d6;--tinta:#1b1b1b;--tinta-suave:#4d4a45;--oros:#d9a21b;--oros-oscuro:#8f6609;--copas:#c0282d;--copas-oscuro:#8e1b20;--espadas:#2a5aa8;--dorso:#b5232a;--dorso-trama:#951b21;--amarraco:#e8b93b;--amarraco-sombra:#9b7514;--boton:#e8b93b;--boton-hover:#f2c856;--resalte:#ffd75e;--ease-salida:cubic-bezier(0.16,1,0.3,1);--sombra-naipe:0 1px 2px rgba(0,0,0,.35),0 3px 8px rgba(0,0,0,.18);} .ds-tapete{background:radial-gradient(ellipse 120% 80% at 50% 30%,var(--tapete-claro) 0%,var(--tapete) 55%,var(--tapete-oscuro) 100%);padding:20px;border-radius:8px;color:var(--sobre-tapete);font-family:Barlow,system-ui,sans-serif;display:flex;gap:10px;align-items:center;flex-wrap:wrap;}.ds-naipe{position:relative;display:inline-block;width:44px;aspect-ratio:2/3;border-radius:4px;box-shadow:var(--sombra-naipe);}.ds-dorso{background-color:var(--dorso);background-image:repeating-linear-gradient(45deg,var(--dorso-trama) 0 2px,transparent 2px 5px),repeating-linear-gradient(-45deg,var(--dorso-trama) 0 2px,transparent 2px 5px);border:2px solid var(--naipe);overflow:hidden;}.ds-dorso::before{content:'';position:absolute;inset:2px;border-radius:2px;border:1px solid rgba(255,255,255,.5);}.ds-dorso::after{content:'';position:absolute;inset:30% 24%;border-radius:50%;background:var(--dorso);border:1px solid rgba(255,255,255,.6);}.ds-cara{background:var(--naipe);border:1px solid var(--naipe-borde);display:inline-grid;place-items:center;color:var(--tinta);}.ds-cara::before{content:'';position:absolute;inset:3px;border-radius:2px;border:1px solid currentColor;opacity:.18;}.ds-cara svg{width:56%;height:auto;}.ds-num{position:absolute;top:2px;left:3px;font:800 9px/1 Bitter,Georgia,serif;color:var(--tinta-suave);font-variant-numeric:tabular-nums;}.ds-cumplida::before{inset:2px;border:1.5px solid var(--copas);opacity:1;}.ds-cumplida .ds-num{top:3px;padding:0 1px 1px 0;background:var(--naipe);z-index:1;}.ds-cumplida::after{content:'';position:absolute;left:36%;right:36%;top:1px;bottom:1px;background:linear-gradient(var(--naipe),var(--naipe)) top/100% 3px no-repeat,linear-gradient(var(--naipe),var(--naipe)) bottom/100% 3px no-repeat;}.ds-amarraco{position:absolute;left:50%;top:50%;width:46%;aspect-ratio:1.35;translate:-50% -50%;border-radius:50%;background:radial-gradient(ellipse at 35% 30%,#fbe39b 0%,var(--amarraco) 45%,var(--amarraco-sombra) 100%);box-shadow:0 2px 3px rgba(0,0,0,.45);}.ds-naipe:focus-visible{outline:2px solid var(--resalte);outline-offset:2px;}"
+    },
+    {
+      "name": "Tanteo de amarracos",
+      "kind": "custom",
+      "refersTo": "amarraco",
+      "description": "Contador de fila: un amarraco por carta echada, de dos en dos.",
+      "html": "<div class=\"ds-tapete\"><span class=\"ds-tanteo\"><i></i><i></i><i></i><i></i><i></i></span></div>",
+      "css": ":host{--tapete:#1d5a3a;--tapete-claro:#23704a;--tapete-oscuro:#123b26;--sobre-tapete:#f3f7f2;--sobre-tapete-suave:#b9d3c2;--naipe:#fff;--naipe-borde:#e6e1d6;--tinta:#1b1b1b;--tinta-suave:#4d4a45;--oros:#d9a21b;--oros-oscuro:#8f6609;--copas:#c0282d;--copas-oscuro:#8e1b20;--espadas:#2a5aa8;--dorso:#b5232a;--dorso-trama:#951b21;--amarraco:#e8b93b;--amarraco-sombra:#9b7514;--boton:#e8b93b;--boton-hover:#f2c856;--resalte:#ffd75e;--ease-salida:cubic-bezier(0.16,1,0.3,1);--sombra-naipe:0 1px 2px rgba(0,0,0,.35),0 3px 8px rgba(0,0,0,.18);} .ds-tapete{background:radial-gradient(ellipse 120% 80% at 50% 30%,var(--tapete-claro) 0%,var(--tapete) 55%,var(--tapete-oscuro) 100%);padding:20px;border-radius:8px;color:var(--sobre-tapete);font-family:Barlow,system-ui,sans-serif;display:flex;gap:10px;align-items:center;flex-wrap:wrap;}.ds-tanteo{display:grid;grid-template-columns:repeat(2,13px);gap:3px;}.ds-tanteo i{width:13px;height:10px;border-radius:50%;background:radial-gradient(ellipse at 35% 30%,#fbe39b 0%,var(--amarraco) 45%,var(--amarraco-sombra) 100%);box-shadow:0 1px 2px rgba(0,0,0,.45);}"
+    },
+    {
+      "name": "Botón principal oro",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "La acción principal, «Echar carta», con línea secundaria opcional.",
+      "html": "<div class=\"ds-tapete\"><button class=\"ds-btn-oro\">Echar carta<small>Te quedan 5 de 7</small></button></div>",
+      "css": ":host{--tapete:#1d5a3a;--tapete-claro:#23704a;--tapete-oscuro:#123b26;--sobre-tapete:#f3f7f2;--sobre-tapete-suave:#b9d3c2;--naipe:#fff;--naipe-borde:#e6e1d6;--tinta:#1b1b1b;--tinta-suave:#4d4a45;--oros:#d9a21b;--oros-oscuro:#8f6609;--copas:#c0282d;--copas-oscuro:#8e1b20;--espadas:#2a5aa8;--dorso:#b5232a;--dorso-trama:#951b21;--amarraco:#e8b93b;--amarraco-sombra:#9b7514;--boton:#e8b93b;--boton-hover:#f2c856;--resalte:#ffd75e;--ease-salida:cubic-bezier(0.16,1,0.3,1);--sombra-naipe:0 1px 2px rgba(0,0,0,.35),0 3px 8px rgba(0,0,0,.18);} .ds-tapete{background:radial-gradient(ellipse 120% 80% at 50% 30%,var(--tapete-claro) 0%,var(--tapete) 55%,var(--tapete-oscuro) 100%);padding:20px;border-radius:8px;color:var(--sobre-tapete);font-family:Barlow,system-ui,sans-serif;display:flex;gap:10px;align-items:center;flex-wrap:wrap;}.ds-btn-oro{display:inline-flex;flex-direction:column;align-items:center;gap:2px;min-height:48px;padding:12px 22px;border:0;border-radius:12px;background:var(--boton);color:var(--tinta);font:800 18px/1.1 Bitter,Georgia,serif;box-shadow:0 4px 14px rgba(0,0,0,.28),0 1px 3px rgba(0,0,0,.2);cursor:pointer;transition:background-color .2s var(--ease-salida),transform .2s var(--ease-salida),box-shadow .2s var(--ease-salida);}.ds-btn-oro small{font:500 13px Barlow,system-ui,sans-serif;}.ds-btn-oro:hover{background:var(--boton-hover);}.ds-btn-oro:active{transform:translateY(1px);box-shadow:0 2px 6px rgba(0,0,0,.25);}.ds-btn-oro:focus-visible{outline:2px solid var(--resalte);outline-offset:2px;}.ds-btn-oro:disabled{background:#cfc6b0;color:#5a5546;box-shadow:none;}"
+    },
+    {
+      "name": "Botón secundario",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Acción secundaria dentro de una hoja: contorno en currentColor.",
+      "html": "<div style=\"background:#fff;padding:20px;border-radius:8px\"><button class=\"ds-btn-sec\">Devolver carta</button></div>",
+      "css": ":host{--tapete:#1d5a3a;--tapete-claro:#23704a;--tapete-oscuro:#123b26;--sobre-tapete:#f3f7f2;--sobre-tapete-suave:#b9d3c2;--naipe:#fff;--naipe-borde:#e6e1d6;--tinta:#1b1b1b;--tinta-suave:#4d4a45;--oros:#d9a21b;--oros-oscuro:#8f6609;--copas:#c0282d;--copas-oscuro:#8e1b20;--espadas:#2a5aa8;--dorso:#b5232a;--dorso-trama:#951b21;--amarraco:#e8b93b;--amarraco-sombra:#9b7514;--boton:#e8b93b;--boton-hover:#f2c856;--resalte:#ffd75e;--ease-salida:cubic-bezier(0.16,1,0.3,1);--sombra-naipe:0 1px 2px rgba(0,0,0,.35),0 3px 8px rgba(0,0,0,.18);} .ds-btn-sec{min-height:44px;padding:10px 18px;border-radius:12px;border:1.5px solid currentColor;background:transparent;color:var(--tinta);font:600 15px Barlow,system-ui,sans-serif;cursor:pointer;transition:background-color .2s var(--ease-salida);}.ds-btn-sec:hover{background:rgba(0,0,0,.05);}.ds-btn-sec:focus-visible{outline:2px solid var(--resalte);outline-offset:2px;}"
+    },
+    {
+      "name": "Pestañas en píldora",
+      "kind": "nav",
+      "refersTo": "tab-pill",
+      "description": "Navegación principal Mesa / Ranking / Bandeja, con contador en Copas.",
+      "html": "<div class=\"ds-tapete\"><div class=\"ds-pestanas\" role=\"tablist\"><button role=\"tab\" aria-selected=\"true\">Mesa</button><button role=\"tab\" aria-selected=\"false\">Ranking</button><button role=\"tab\" aria-selected=\"false\">Bandeja <span class=\"ds-cont\">1</span></button></div></div>",
+      "css": ":host{--tapete:#1d5a3a;--tapete-claro:#23704a;--tapete-oscuro:#123b26;--sobre-tapete:#f3f7f2;--sobre-tapete-suave:#b9d3c2;--naipe:#fff;--naipe-borde:#e6e1d6;--tinta:#1b1b1b;--tinta-suave:#4d4a45;--oros:#d9a21b;--oros-oscuro:#8f6609;--copas:#c0282d;--copas-oscuro:#8e1b20;--espadas:#2a5aa8;--dorso:#b5232a;--dorso-trama:#951b21;--amarraco:#e8b93b;--amarraco-sombra:#9b7514;--boton:#e8b93b;--boton-hover:#f2c856;--resalte:#ffd75e;--ease-salida:cubic-bezier(0.16,1,0.3,1);--sombra-naipe:0 1px 2px rgba(0,0,0,.35),0 3px 8px rgba(0,0,0,.18);} .ds-tapete{background:radial-gradient(ellipse 120% 80% at 50% 30%,var(--tapete-claro) 0%,var(--tapete) 55%,var(--tapete-oscuro) 100%);padding:20px;border-radius:8px;color:var(--sobre-tapete);font-family:Barlow,system-ui,sans-serif;display:flex;gap:10px;align-items:center;flex-wrap:wrap;}.ds-pestanas{display:flex;gap:6px;width:100%;}.ds-pestanas button{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:40px;border-radius:999px;border:1px solid rgba(255,255,255,.32);background:transparent;color:var(--sobre-tapete);font:600 15px Barlow,system-ui,sans-serif;cursor:pointer;transition:background-color .2s var(--ease-salida),color .2s var(--ease-salida);}.ds-pestanas button:hover{background:rgba(255,255,255,.08);}.ds-pestanas button:focus-visible{outline:2px solid var(--resalte);outline-offset:2px;}.ds-pestanas button[aria-selected=true]{background:var(--naipe);border-color:var(--naipe);color:var(--tapete-oscuro);}.ds-cont{min-width:20px;padding:0 6px;border-radius:10px;background:var(--copas);color:#fff;font-size:12px;font-weight:700;line-height:20px;}"
+    },
+    {
+      "name": "Píldora del año",
+      "kind": "chip",
+      "refersTo": "year-pill",
+      "description": "Selector del año en oro, con select nativo invisible encima.",
+      "html": "<div class=\"ds-tapete\"><span class=\"ds-anio\" tabindex=\"0\">2026 <svg width=\"12\" height=\"12\" viewBox=\"0 0 12 12\"><path d=\"M3 4.5l3 3 3-3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"/></svg></span></div>",
+      "css": ":host{--tapete:#1d5a3a;--tapete-claro:#23704a;--tapete-oscuro:#123b26;--sobre-tapete:#f3f7f2;--sobre-tapete-suave:#b9d3c2;--naipe:#fff;--naipe-borde:#e6e1d6;--tinta:#1b1b1b;--tinta-suave:#4d4a45;--oros:#d9a21b;--oros-oscuro:#8f6609;--copas:#c0282d;--copas-oscuro:#8e1b20;--espadas:#2a5aa8;--dorso:#b5232a;--dorso-trama:#951b21;--amarraco:#e8b93b;--amarraco-sombra:#9b7514;--boton:#e8b93b;--boton-hover:#f2c856;--resalte:#ffd75e;--ease-salida:cubic-bezier(0.16,1,0.3,1);--sombra-naipe:0 1px 2px rgba(0,0,0,.35),0 3px 8px rgba(0,0,0,.18);} .ds-tapete{background:radial-gradient(ellipse 120% 80% at 50% 30%,var(--tapete-claro) 0%,var(--tapete) 55%,var(--tapete-oscuro) 100%);padding:20px;border-radius:8px;color:var(--sobre-tapete);font-family:Barlow,system-ui,sans-serif;display:flex;gap:10px;align-items:center;flex-wrap:wrap;}.ds-anio{display:inline-flex;align-items:center;gap:4px;padding:6px 12px 6px 14px;border-radius:999px;background:var(--amarraco);color:var(--tinta);font:800 15px Bitter,Georgia,serif;cursor:pointer;}.ds-anio:focus-visible{outline:2px solid var(--resalte);outline-offset:2px;}"
+    },
+    {
+      "name": "Campo de texto",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Campo dentro de la hoja clara: borde cálido, foco en verde fieltro.",
+      "html": "<div style=\"background:#fff;padding:20px;border-radius:8px;font-family:Barlow,system-ui,sans-serif\"><label class=\"ds-campo\"><span>¿Qué favor pides?</span><input class=\"ds-entrada\" placeholder=\"Que me ayudes con la mudanza\"></label></div>",
+      "css": ":host{--tapete:#1d5a3a;--tapete-claro:#23704a;--tapete-oscuro:#123b26;--sobre-tapete:#f3f7f2;--sobre-tapete-suave:#b9d3c2;--naipe:#fff;--naipe-borde:#e6e1d6;--tinta:#1b1b1b;--tinta-suave:#4d4a45;--oros:#d9a21b;--oros-oscuro:#8f6609;--copas:#c0282d;--copas-oscuro:#8e1b20;--espadas:#2a5aa8;--dorso:#b5232a;--dorso-trama:#951b21;--amarraco:#e8b93b;--amarraco-sombra:#9b7514;--boton:#e8b93b;--boton-hover:#f2c856;--resalte:#ffd75e;--ease-salida:cubic-bezier(0.16,1,0.3,1);--sombra-naipe:0 1px 2px rgba(0,0,0,.35),0 3px 8px rgba(0,0,0,.18);} .ds-campo{display:grid;gap:6px;}.ds-campo span{font-weight:600;font-size:15px;color:var(--tinta);}.ds-entrada{min-height:46px;padding:10px 12px;border-radius:10px;border:1.5px solid #cfc8b8;background:#fbfaf7;color:var(--tinta);caret-color:var(--copas);font:inherit;transition:border-color .2s;}.ds-entrada::placeholder{color:#6f6a60;}.ds-entrada:focus{outline:none;border-color:var(--tapete);box-shadow:0 0 0 3px rgba(29,90,58,.2);}"
+    },
+    {
+      "name": "Hoja (diálogo)",
+      "kind": "card",
+      "refersTo": "sheet",
+      "description": "Diálogo nativo en papel de naipe, modo claro, que sube desde abajo.",
+      "html": "<div class=\"ds-tapete\" style=\"align-items:flex-end;min-height:220px\"><div class=\"ds-hoja\"><div class=\"ds-hoja-cab\"><strong>Echar carta</strong><button aria-label=\"Cerrar\">×</button></div><p>Elige a quién se la echas.</p></div></div>",
+      "css": ":host{--tapete:#1d5a3a;--tapete-claro:#23704a;--tapete-oscuro:#123b26;--sobre-tapete:#f3f7f2;--sobre-tapete-suave:#b9d3c2;--naipe:#fff;--naipe-borde:#e6e1d6;--tinta:#1b1b1b;--tinta-suave:#4d4a45;--oros:#d9a21b;--oros-oscuro:#8f6609;--copas:#c0282d;--copas-oscuro:#8e1b20;--espadas:#2a5aa8;--dorso:#b5232a;--dorso-trama:#951b21;--amarraco:#e8b93b;--amarraco-sombra:#9b7514;--boton:#e8b93b;--boton-hover:#f2c856;--resalte:#ffd75e;--ease-salida:cubic-bezier(0.16,1,0.3,1);--sombra-naipe:0 1px 2px rgba(0,0,0,.35),0 3px 8px rgba(0,0,0,.18);} .ds-tapete{background:radial-gradient(ellipse 120% 80% at 50% 30%,var(--tapete-claro) 0%,var(--tapete) 55%,var(--tapete-oscuro) 100%);padding:20px;border-radius:8px;color:var(--sobre-tapete);font-family:Barlow,system-ui,sans-serif;display:flex;gap:10px;align-items:center;flex-wrap:wrap;}.ds-hoja{width:100%;max-width:560px;background:var(--naipe);color:var(--tinta);border-radius:18px 18px 0 0;box-shadow:0 -10px 40px rgba(0,0,0,.35);padding:18px 20px 24px;font-family:Barlow,system-ui,sans-serif;}.ds-hoja-cab{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;}.ds-hoja-cab strong{font:800 22px/1.15 Bitter,Georgia,serif;}.ds-hoja-cab button{width:40px;height:40px;border-radius:50%;border:0;background:transparent;color:var(--tinta-suave);font-size:22px;cursor:pointer;}.ds-hoja-cab button:hover{background:#f1eee7;}.ds-hoja-cab button:focus-visible{outline:2px solid var(--resalte);outline-offset:2px;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "El Tapete del Mus",
+    "overview": "Toda la app es una mesa de mus: un tapete de fieltro verde con viñeta y grano, y encima naipes de baraja española. La información no vive en barras ni en avatares, vive en la carta: boca abajo está por usar, boca abajo con un amarraco encima espera respuesta, boca arriba ya se ha jugado. El estado se lee por la marca física (dorso, ficha, cara, pip hueco o lleno, filete), nunca solo por el color.\n\nLa densidad es la de una mesa de juego: la matriz entera de la cuadrilla cabe en el móvil sin scroll, con naipes pequeños y números de esquina diminutos. El oro del amarraco es la única voz cálida sobre el verde; los cuatro palos son la identidad de cada persona. Lo que sale del tapete y pide atención (una hoja, un aviso) es papel blanco de naipe, en modo claro.\n\nEl movimiento es gesto de jugador: el naipe sale de la mano, cruza en arco, golpea la mesa con «¡Órdago!», se da la vuelta y le cae el amarraco. Todo con una única curva de salida rápida y frenada larga.",
+    "keyCharacteristics": [
+      "Fondo único de fieltro verde con viñeta radial y grano de ruido fijo.",
+      "Naipe 2:3 con esquinas de 4px como unidad de información; cuatro estados legibles sin color.",
+      "Palos dibujados a mano en SVG como color de identidad por persona.",
+      "Amarraco dorado como ficha de conteo, siempre con el mismo degradado de relieve.",
+      "Bitter 800 para títulos, números y botones; Barlow para todo lo demás.",
+      "Controles estándar (píldoras, botón, campos) teñidos con el mundo, no inventados."
+    ],
+    "rules": [
+      {
+        "name": "La Regla del Oro Único",
+        "body": "El oro es el único acento sobre el tapete: fichas, año, botón principal, cifras. No se introduce un segundo acento.",
+        "section": "colors"
+      },
+      {
+        "name": "La Regla del Palo es Persona",
+        "body": "Los colores de palo identifican personas y nada más. No se usan para estados, categorías ni decoración.",
+        "section": "colors"
+      },
+      {
+        "name": "La Regla de la Marca antes que el Color",
+        "body": "Todo estado tiene una marca física (dorso, ficha, cara, pip hueco o lleno, filete cortado). El color la refuerza, nunca la sustituye.",
+        "section": "colors"
+      },
+      {
+        "name": "La Regla de la Tinta de Naipe",
+        "body": "Todo número que cuenta algo (número de carta, cifra de premio, año, iniciales de columna) va en Bitter 800 con cifras tabulares.",
+        "section": "typography"
+      },
+      {
+        "name": "La Regla Sin Versalitas",
+        "body": "No hay texto en mayúsculas espaciadas ni etiquetas sobre los títulos; la jerarquía la hacen el peso y el tamaño. El único tracking es el −0.01em de la marca y del grito y el +0.02em de las iniciales de columna.",
+        "section": "typography"
+      },
+      {
+        "name": "La Regla de la Mesa Entera",
+        "body": "La matriz completa de la cuadrilla se ve sin scroll: en móvil por densidad, en escritorio por el alto de la ventana. Ninguna acción tapa la mesa en escritorio.",
+        "section": "layout"
+      },
+      {
+        "name": "La Regla de la Sombra Blanda",
+        "body": "Las sombras son difusas y verticales, como luz cenital sobre un tapete. No hay sombras desplazadas duras ni bordes de color en lugar de sombra.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** representar cada favor como un naipe 2:3 de 4px de esquina y comunicar su estado con dorso, amarraco, pip hueco o lleno y filete.",
+      "**Do** usar el amarraco con su degradado de relieve (`#fbe39b` → amarraco → amarraco-sombra) y su sombra de apoyo siempre que se cuente algo.",
+      "**Do** acompañar el nombre de cada persona con su palo en SVG.",
+      "**Do** poner sobre el tapete solo Tiza y Tiza Gastada; lo que se lee en papel va en Naipe con Tinta.",
+      "**Do** usar la curva `cubic-bezier(0.16, 1, 0.3, 1)` en todas las transiciones y dar a cada animación su versión quieta.",
+      "**Do** mantener la mesa entera a la vista: CTA fijo abajo en móvil, en la cabeza del aside en escritorio."
+    ],
+    "donts": [
+      "**Don't** usar dashboards de avatares, barras de progreso o anillos para mostrar quién ha usado su carta.",
+      "**Don't** distinguir estados solo por color.",
+      "**Don't** usar los colores de palo para nada que no sea la identidad de una persona.",
+      "**Don't** añadir un segundo acento cálido junto al oro ni teñir botones con colores de palo.",
+      "**Don't** poner etiquetas en mayúsculas espaciadas sobre los títulos.",
+      "**Don't** sustituir los palos dibujados por glifos tipográficos o emojis de baraja francesa.",
+      "**Don't** usar sombras desplazadas duras ni fondos planos sin fieltro."
+    ]
+  }
+}

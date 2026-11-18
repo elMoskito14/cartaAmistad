@@ -1,0 +1,261 @@
+.mesa {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 4px 6px;
+  table-layout: fixed;
+}
+
+.esquina {
+  width: 64px;
+  text-align: left;
+  vertical-align: bottom;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.15;
+  color: var(--sobre-tapete-suave);
+  padding-bottom: 2px;
+}
+
+.totalCab {
+  width: 34px;
+  vertical-align: bottom;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--sobre-tapete-suave);
+  text-align: center;
+  padding-bottom: 2px;
+}
+
+.colCab {
+  padding: 0;
+  vertical-align: bottom;
+}
+
+.cabBoton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  width: 100%;
+  padding: 4px 0 2px;
+  border-radius: 6px;
+  font-family: var(--fuente-titulo);
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  transition: background-color 0.2s var(--ease-salida), opacity 0.25s var(--ease-salida);
+}
+
+.filaCab {
+  padding: 0;
+  text-align: left;
+}
+
+.filaBoton {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  min-height: 36px;
+  padding: 4px 4px 4px 2px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color 0.2s var(--ease-salida), opacity 0.25s var(--ease-salida);
+}
+
+.filaBoton span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cabBoton:hover,
+.filaBoton:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.activa {
+  background-color: rgba(255, 255, 255, 0.14);
+}
+
+.yo {
+  color: var(--resalte);
+}
+
+.celda {
+  padding: 0;
+  vertical-align: middle;
+}
+
+.celdaBoton {
+  position: relative;
+  display: block;
+  width: 100%;
+  border-radius: var(--radio-naipe);
+  transition:
+    transform 0.25s var(--ease-salida),
+    opacity 0.25s var(--ease-salida),
+    filter 0.25s var(--ease-salida);
+}
+
+.celdaBoton:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+.celdaBoton:disabled {
+  cursor: default;
+}
+
+.atenuada {
+  opacity: 0.3;
+  filter: saturate(0.5);
+}
+
+.levantada {
+  transform: translateY(-3px);
+}
+
+.levantada > span > span {
+  box-shadow: var(--sombra-levantada);
+}
+
+.total {
+  vertical-align: middle;
+  transition: opacity 0.25s var(--ease-salida);
+}
+
+/* Tanteo de la fila: un amarraco por carta echada, de dos en dos como en la mesa de mus. */
+.tanteo {
+  display: grid;
+  grid-template-columns: repeat(2, 11px);
+  gap: 3px;
+  justify-content: center;
+}
+
+.amarraco {
+  width: 11px;
+  height: 8px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at 35% 30%, #fbe39b 0%, var(--amarraco) 45%, var(--amarraco-sombra) 100%);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+}
+
+/* Carta rechazada: el naipe pedido se va de la casilla de vuelta al mazo. */
+.devuelta {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  animation: alMazo 0.9s var(--ease-salida) 0.2s both;
+}
+
+@keyframes alMazo {
+  0% {
+    transform: none;
+    opacity: 1;
+  }
+  35% {
+    transform: translate(-6px, -10px) rotate(-8deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-60px, -26px) rotate(-24deg) scale(0.8);
+    opacity: 0;
+  }
+}
+
+@media (min-width: 720px) {
+  .mesa {
+    border-spacing: 8px 8px;
+  }
+  .esquina {
+    width: 96px;
+  }
+  .totalCab {
+    width: 52px;
+  }
+  .filaBoton {
+    font-size: 16px;
+  }
+  .cabBoton {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mesa {
+    /* Ocho filas a la vista en un portátil: el ancho sale también del alto de la pantalla. */
+    width: clamp(520px, min(52vw, calc((100vh - 300px - var(--n) * 8px) * 0.6667 + 148px + var(--n) * 9px)), 760px);
+    margin: 0 auto;
+  }
+  .tanteo {
+    grid-template-columns: repeat(2, 13px);
+  }
+  .amarraco {
+    width: 13px;
+    height: 10px;
+  }
+}
+
+/* Mesa densa (más de 9 personas): en el móvil cada naipe ronda los 20px. */
+.densa {
+  border-spacing: 2px 4px;
+}
+
+.densa .esquina {
+  width: 64px;
+}
+
+.densa .totalCab {
+  width: 26px;
+}
+
+.densa .cabBoton {
+  font-size: 10px;
+  letter-spacing: -0.03em;
+}
+
+.densa .filaBoton {
+  gap: 3px;
+  font-size: 13px;
+  padding-left: 0;
+}
+
+.densa .tanteo {
+  grid-template-columns: repeat(2, 9px);
+  gap: 2px;
+}
+
+.densa .amarraco {
+  width: 9px;
+  height: 7px;
+}
+
+@media (min-width: 720px) {
+  .densa {
+    border-spacing: 5px 6px;
+  }
+  .densa .esquina {
+    width: 88px;
+  }
+  .densa .totalCab {
+    width: 40px;
+  }
+  .densa .cabBoton {
+    font-size: 12px;
+    letter-spacing: 0;
+  }
+  .densa .filaBoton {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Misma idea que la mesa normal, con el espaciado de la densa: todas las filas a la vista. */
+  .mesa.densa {
+    width: clamp(420px, min(52vw, calc((100vh - 300px - var(--n) * 6px) * 0.6667 + 133px + var(--n) * 5px)), 760px);
+  }
+}
